@@ -48,13 +48,14 @@ class TaskController extends Controller
         return back();
     }
 
-    public function edit($id)
+    //public function edit($id)
+    public function edit(Task $task)
     {
         //$task = DB::table('tasks')->where('id', $id)->first();
 
 
-        $task = Task::find($id);
-
+        //$task = Task::find($id);  ==> alasannya karena laravel menggunakan model binding yg langsung
+        //dapat mengetahui variabel $task
         return view('tasks.edit', ['task' => $task]);
     }
 
