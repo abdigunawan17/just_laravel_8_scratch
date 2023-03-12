@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+ul li{
+    display: inline;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
